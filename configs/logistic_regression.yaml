@@ -1,0 +1,9 @@
+model:
+  name: logistic_regression
+  C: 1.0
+  max_iter: 200
+  solver: saga
+
+data:
+  max_train: 30000   # subsample for tractability
+  max_eval: null     # null = use full test set
