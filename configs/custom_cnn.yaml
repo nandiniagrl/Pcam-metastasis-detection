@@ -1,0 +1,17 @@
+model:
+  name: custom_cnn
+  dropout: 0.3
+
+training:
+  epochs: 15
+  batch_size: 128
+  lr: 1.0e-3
+  weight_decay: 1.0e-4
+  optimizer: adam
+  scheduler: plateau
+  patience: 4
+  augment: true
+
+data:
+  num_workers: 4
+  subset_fraction: 1.0
