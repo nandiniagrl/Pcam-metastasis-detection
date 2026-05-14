@@ -1,0 +1,18 @@
+model:
+  name: resnet50
+  pretrained: true
+  freeze: last_block   # one of: none | all_but_fc | last_block
+
+training:
+  epochs: 10
+  batch_size: 128
+  lr: 1.0e-4
+  weight_decay: 1.0e-4
+  optimizer: adam
+  scheduler: plateau
+  patience: 3
+  augment: true
+
+data:
+  num_workers: 4
+  subset_fraction: 1.0
